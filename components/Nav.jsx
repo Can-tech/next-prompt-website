@@ -6,7 +6,6 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
   const { data: session } = useSession();
-
   const [providers, setProviders] = useState(null);
   const [toggleDropDown, setToggleDropDown] = useState(false);
 
@@ -25,6 +24,7 @@ const Nav = () => {
           width={30}
           height={30}
           className="object-contain"
+          alt="logo"
         />
         <p className="logo_text">Promptopia</p>
       </Link>
